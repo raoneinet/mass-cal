@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+                <h1>CALCULADOR IMC</h1>
+        </div>
+        <div class="warning">
+                <p>É importante que você leia as instruções antes de fazer o cálculo.</p>
+        </div>
+        <div class="calc-area">
+            
+           
+                <div class="calc">
+                    <div class="calc-input">
+                        <div class="enter-info">
+                            <div>Peso:</div>
+                            <div>
+                                <input type="number"  id="peso" placeholder="Kg">
+                            </div>
+                        </div>
+                        <div class="enter-info">
+                            <div>Altura:</div>
+                            <div>
+                                <input type="number"  id="altura" placeholder="m 1.70">
+                            </div>
+                        </div>
+                    </div>
+                        <div class="calc-button">
+                            <input type="button" onclick="calcular()" value="Calcular">
+                        </div>
+                </div>
+            
+            <div id="res">
+                <p>Resposta:</p>
+            </div>
+            <div>
+                <h2>Instrução</h2>
+                <p>Para fazer o cálculo do seu IMC (índice de massa corporal) insira o valor correspondente ao seu peso em quilograma (Kg) e o valor correspondente a sua altura em metros (m)</p>
+            </div>
+            <div class="content">
+                <div class="nivel">
+                    <h2>Niveis IMC</h2>
+                    <p><strong>Magreza</strong>, quando o resultado é menor que 18,5 kg/m<sup>2</sup>;</p>
+                    <p><strong>Normal</strong>, quando o resultado está entre 18,5 e 24,9 kg/m<sup>2</sup>;</p>
+                    <p><strong>Sobrepeso</strong>, quando o resultado está entre 24,9 e 30 kg/m<sup>2</sup>;</p>
+                    <p><strong>Obesidade</strong>, quando o resultado é maior que 30 kg/m<sup>2</sup>.</p>
+                </div>
+                <div class="nivel">
+                    <h2>Como é calculado?</h2>
+                    <p>O IMC é a relação entre peso e altura e o cálculo é feito de acordo com a fórmula: IMC = peso/ a<sup>2</sup>, onde 'a' equivale a altura. devendo o peso estar em kg e a altura em metro, e o resultado é dado em kg/m2. Depois de obter o resultado, é verificado em que faixa o resultado se encontra, podendo indicar.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Calculador IMC - desenvolvido por Raone Ferreira - 2021</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
